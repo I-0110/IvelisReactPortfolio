@@ -1,38 +1,36 @@
-
-import React from 'react';
+// import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from '.pages/App.jsx';
-import './index.css';
 
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
-import { createRoot } from 'react-dom/client';
 
-import { Children, StrictMode } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+import App from './App';
 
 
+import { StrictMode } from 'react';
 
-
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Footer from './components/Footer';
-import Header from './components/Header';
+// import Error from './components/Error';
 import Home from './pages/Home';
-import NavBar from './components/NavBar';
-import Projects from './pages/Projects';
+import About from './pages/About';
+import Projects from './pages/Projects'
+import Contact from './pages/Contact';
 import Resume from './pages/Resume';
+// import Blog from './pages/Blog';
 
 // Define the accessible routes
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: 'About',
+
+const router = createBrowserRouter([ 
+  { 
+    path: '/', 
+    element: <App />, 
+    children: [ 
+      { 
+        index: true, 
+        element: <Home />, 
+      }, 
+      { 
+        path: 'About', 
         element: <About />,
       },
       {
@@ -47,21 +45,11 @@ const router = createBrowserRouter([
         path: 'Resume',
         element: <Resume />,
       },
-      {
-        path: 'Log',
-        element: <Log />,
-      },
-    ]
-  }
-])
+    ],
+  },
+]);
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <RouterProvider router={router} />
 );
-
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//      <RouterProvider router={router} />
-// )

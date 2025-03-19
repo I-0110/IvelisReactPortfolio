@@ -1,23 +1,16 @@
-import './App.css'
-import { useState } from 'react'
+import { Outlet } from 'react-router-dom';
+
+import Nav from './components/NavTabs';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+      <Nav />
+      <main className="mx-3">
+        <Outlet />
+      </main>
       <h1>Welcome to Ivelis Becker's Portfolio!</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
