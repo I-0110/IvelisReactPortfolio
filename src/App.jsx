@@ -1,18 +1,21 @@
-import { Outlet } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Nav from './components/NavTabs';
+import Header from './components/Header';
+import About from "./pages/About";
 
-function App() {
+export default function App() {
 
   return (
-    <>
-      <Nav />
-      <main className="mx-3">
-        <Outlet />
-      </main>
-      <h1>Welcome to Ivelis Becker's Portfolio!</h1>
-    </>
-  )
+    <Router>
+      <Header />
+      <Nav /> 
+  
+      <Routes>
+        <Route path="/" element={<About />} />
+        
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
