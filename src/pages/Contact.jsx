@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as ReactIcon } from '../assets/react.svg';
+// import { ReactComponent as ReactIcon } from '../assets/react.svg';
 
 const SocialMediaLink = () => {
     return (
@@ -10,17 +10,3 @@ const SocialMediaLink = () => {
 }
 
 export default SocialMediaLink;
-
-// export default function Contact() {
-//     return (
-//         <div>
-//             <h1>Contact Me!</h1>
-//             <ul>
-//                 <li><a>LinkedIn: </a></li>
-//                 <li><a>Email: </a></li>
-//                 <li><a>GitHub: </a></li>
-//                 <li><a>Click here to download Resume</a></li>
-//             </ul>
-//         </div>
-//     );
-// }
