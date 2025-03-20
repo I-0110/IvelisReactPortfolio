@@ -1,5 +1,9 @@
-const Header = () => {
-    return <h1>Header</h1>
+function Header() {
+  return (
+    <header className="header">
+      <h1>Home</h1>
+    </header>
+  );
 }
 
 export default Header;
