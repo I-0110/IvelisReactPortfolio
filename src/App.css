@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+body {
+  background-color: lightblue; 
+  background-image: url('Assets/colorWorld.png'); 
+  background-size: cover; 
+  color: white;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
