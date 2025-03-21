@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // Bootstrap css
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -14,14 +15,26 @@ export default function NavTabs() {
     return (
       <>
         <Navbar bg="dark" data-bs-theme="dark" fixed="top">
-          <Container>
-            <Navbar.Brand href="#Home"><h1>Ivelis Becker</h1></Navbar.Brand>
+          <Container> 
+            <Link to='/'>
+              <Navbar.Brand><h1>Ivelis Becker</h1></Navbar.Brand>
+            </Link>
             <Nav className="me-auto">
-              <Nav.Link href="#Home">Home</Nav.Link>
-              <Nav.Link href="#About">About</Nav.Link>
-              <Nav.Link href="#Projects">Projects</Nav.Link>
-              <Nav.Link href="#Resume">Resume</Nav.Link>
-              <Nav.Link href="#Contact">Contact</Nav.Link>
+              <Link to='/'>
+                Home
+              </Link>
+              <Link to='/About'>
+                About
+              </Link>
+              <Link to='/Projects'>
+                Projects
+              </Link>
+              <Link to='/Resume'>
+                Resume
+              </Link>
+              <Link to='/Contact'>
+                Contact
+              </Link>
             </Nav>
           </Container>
         </Navbar>
