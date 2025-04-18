@@ -1,7 +1,9 @@
+import Nav from './NavTabs';
+
 function Header() {
   return (
     <header className="header">
-      {/* <h1>Ivelis Becker</h1> */}
+      <Nav />
     </header>
   );
 }
