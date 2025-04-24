@@ -5,11 +5,28 @@
   text-align: center;
 }
 
-body {
-  background-color: lightblue; 
+body { 
   background-image: url('Assets/colorWorld.png'); 
   background-size: cover; 
   color: white;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: block; 
+  top: 0; 
+  width: 100%; 
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .logo {
