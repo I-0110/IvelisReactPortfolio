@@ -20,6 +20,9 @@ export default function NavTabs() {
               <Link to='/Projects'>
                 Projects
               </Link>
+              <Link to='/Videos'>
+                Videos
+              </Link>
               <Link to='/Resume'>
                 Resume
               </Link>
