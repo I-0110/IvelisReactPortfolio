@@ -6,7 +6,7 @@
 }
 
 body { 
-  background-image: url('Assets/colorWorld.png'); 
+  background-image: url('../public/colorWorld.png'); 
   background-size: cover; 
   color: white;
 }
