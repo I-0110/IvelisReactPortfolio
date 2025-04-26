@@ -24,7 +24,6 @@ export default function App() {
         <Route path="/Resume" element={<Resume />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
-
       <Footer />
     </Router>
   );
