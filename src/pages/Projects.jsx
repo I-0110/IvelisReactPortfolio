@@ -1,7 +1,7 @@
 import React from "react";
-import coffee from "../assets/coffee.png";
-import farm from "../assets/theFarm.png";
-import music from "../assets/musicDiary.png";
+import coffee from "../../public/coffee.png";
+import farm from "../../public/theFarm.png";
+import music from "../../public/musicDiary.png";
 
 export default function Project() {
     return (
