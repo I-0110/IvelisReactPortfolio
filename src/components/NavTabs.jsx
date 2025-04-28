@@ -23,6 +23,9 @@ export default function NavTabs() {
               <Link to='/Videos'>
                 Videos
               </Link>
+              {/* <Link to='/Hobbies'>
+                Hobbies
+              </Link> */}
               <Link to='/Resume'>
                 Resume
               </Link>

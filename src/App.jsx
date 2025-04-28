@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Videos from "./pages/Videos"; 
+import Hobbies from "./pages/Hobbies";
 import Resume from "./pages/Resume";
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Projects" element={<Projects />} />
         <Route path="/Videos" element={<Videos />} />
+        {/* <Route path="/Hobbies" element={<Hobbies />} /> */}
         <Route path="/Resume" element={<Resume />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
