@@ -3,6 +3,7 @@ import { useState } from "react";
 import coffee from "../../public/coffee.png";
 import farm from "../../public/theFarm.png";
 import music from "../../public/musicDiary.png";
+import ivelis from "../../public/ivelis.png"; 
 
 // Set database of your projects here
 const projects = [
@@ -11,6 +12,12 @@ const projects = [
         description: "For coffee lovers who loves to keep track of their coffee adventures, we got you! This website record your coffees and recipes. As a notebook, but online and accesible.",
         src: coffee,
         link: "https://zaccahimba.github.io/GoodCoffeeBeans/"
+    },
+    {
+        title: "Ivelis Becker Portfolio",
+        description: "This is my first personal portfolio website, built with html and css. It showcases my projects, skills, and experiences back in that time.",
+        src: ivelis,
+        link: "https://i-0110.github.io/IvelisPortfolio/"
     },
     {
         title: "Farm Management",
