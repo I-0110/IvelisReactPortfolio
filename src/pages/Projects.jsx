@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React from "react";
+import { useState, useEffect } from "react";
 import coffee from "../../public/coffee.png";
 import farm from "../../public/theFarm.png";
 import music from "../../public/musicDiary.png";

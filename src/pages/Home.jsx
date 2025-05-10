@@ -1,11 +1,11 @@
 import React from "react";
-import me from "../../public/me.jpg"; 
+import me from "../../public/hello.mp4"; 
 
 export default function Home() {
     return (
         <div style={{ display: "flex", alignItems: "center" }}>
-            <img
-                src={me}
+            <video
+                src={me} autoPlay loop muted
                 alt="Profile Picture"
                 style={
                     { 
@@ -16,7 +16,7 @@ export default function Home() {
                         objectFit: "contain",
                     }
                 }
-            />
+            ></video>
             <div style={{display: "flex", flexDirection: "column", justifyContent: "space-between", flex: 1 }}>
                 <h2>Welcome to Ivelis Becker's Portfolio!</h2>
                 <h3>Showcasting my projects and more</h3>
